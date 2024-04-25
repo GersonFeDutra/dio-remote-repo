@@ -14,6 +14,7 @@ versioning from [DIO.me](dio.me)
 ## 💻 Classes Resume
 
 | Classes | Resumes |
+| ------- | ------- |
 | Saving changes on Local Repository | [Saving](#Saving) |
 | Undoing changes on Local Repository | [Restore](#Restore)
 
@@ -33,7 +34,7 @@ git status
 
 ### Restore
 
-<img src="https://i.stack.imgur.com/cZkcV.jpg" align="right" width="33%"
+<img src="https://i.stack.imgur.com/cZkcV.jpg" align="right" width="40%"
     alt="Git Data Transport Commands" />
 
 - **Working Tree:** local directory from the repository in its current physical
@@ -67,6 +68,12 @@ git reflog
 > were not sent to remote. If you need to restore some previous state, you must
 > `rebase` (make a local commit for reset).
 
+### Pull & Push
+
+```sh
+git remote add origin ${url}  # Connect via https or ssh
+git push -u origin ${branch}  # Send changes to remote repository
+git pull  # Fetch and merge changes from remote to local repository
 ```
 
 </details>
@@ -84,8 +91,9 @@ git reflog
 ## 💻 Resumo de aulas
 
 | Aulas | Resumos |
-| Salvando Alterações no Repositório Local | [Salvando](#Saving) |
-| Desfazendo Alterações no Repositório Local | [Restaurando](#Restore)
+| ----- | ------- |
+| Salvando Alterações no Repositório Local | [Salvando](#Salvando) |
+| Desfazendo Alterações no Repositório Local | [Restaurando](#Restaurando)
 
 ### Salvando
 
@@ -137,5 +145,13 @@ git reflog
 > Você apenas deve fazer alterações no histórico do repositório local de comitts
 > que não foram mandados para o remoto. Se você precisa restaurar um estado
 > anterior você deve fazer um `rebase` (fazer um commit para resetar).
+
+### Pull & Push
+
+```sh
+git remote add origin ${url}  # Conecta via https ou ssh
+git push -u origin ${branch}  # Envia as mudanças para o repositório remoto
+git pull  # Busca e mescla alterações do repositório remoto no local
+```
 
 </details>
