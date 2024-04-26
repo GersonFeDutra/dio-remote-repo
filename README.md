@@ -17,6 +17,8 @@ versioning from [DIO.me](dio.me)
 | ------- | ------- |
 | Saving changes on Local Repository | [Saving](#Saving) |
 | Undoing changes on Local Repository | [Restore](#Restore)
+| Pull & Push changes on Local Repository | [Pull & Push](#Pull%20%26%20Push) |
+| Working With Branches: Merge, Delete, Diff Conflicts | [Working with Branches](#Working%20with%20Branches) |
 
 ### Saving
 
@@ -76,6 +78,25 @@ git push -u origin ${branch}  # Send changes to remote repository
 git pull  # Fetch and merge changes from remote to local repository
 ```
 
+### Working with Branches
+
+A branch is a moving pointer at the changes' history, it points to the most
+recent commit in that barnch, and can include other relative commits.
+
+```sh
+git checkout -b ${branch}  # Muda para o ramo indicada
+git branch -v  # Lista os últimos commits de cada branch
+git merge ${branch}  # Mescla o ramo indicado no atual
+git branch -d ${branch}  # Delete a branch
+```
+
+> [!WARNING]
+> Merge conflicts occur when sending changes from a branch to another. This
+> includes changes between local to remote repository. When doing the merge,
+> Git will generate a conflict in the files itself that must be resolved before
+> merged.
+
+
 </details>
 
 ---
@@ -94,6 +115,8 @@ git pull  # Fetch and merge changes from remote to local repository
 | ----- | ------- |
 | Salvando Alterações no Repositório Local | [Salvando](#Salvando) |
 | Desfazendo Alterações no Repositório Local | [Restaurando](#Restaurando)
+| Enviando e baixando alterações com repositório remoto | [Enviando & Baixando](#Enviando%20%26%20Baixando) |
+| Trabalhando com Ramos | [Trabalhando com Ramos](#trabalhando%20com%20ramos) |
 
 ### Salvando
 
@@ -146,12 +169,31 @@ git reflog
 > que não foram mandados para o remoto. Se você precisa restaurar um estado
 > anterior você deve fazer um `rebase` (fazer um commit para resetar).
 
-### Pull & Push
+### Enviando & Baixando
 
 ```sh
 git remote add origin ${url}  # Conecta via https ou ssh
 git push -u origin ${branch}  # Envia as mudanças para o repositório remoto
 git pull  # Busca e mescla alterações do repositório remoto no local
 ```
+
+### Trabalhando com Ramos
+
+Um ramo é um ponteiro móvel no histórico de alterações, ele aponta para o commit
+mais recente naquele ramo, e pode incluir outros commits relativos a ele.
+
+```sh
+git checkout -b ${branch}  # Muda para o ramo indicada
+git branch -v  # Lista os últimos commits de cada branch
+git merge ${branch}  # Mescla o ramo indicado no atual
+git branch -d ${branch}  # Remove um ramo
+```
+
+> [!WARNING]
+> Conflitos de mesclagem ocorrem ao enviar alterações de um ramo à outro.
+> Isto inclui alterações entre o repositório local e remoto. Ao fazer o merge,
+> git irá gerar um conflito nos próprios arquivos que deverão ser resolvidos
+> antes de serem enviados.
+
 
 </details>
