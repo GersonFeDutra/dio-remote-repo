@@ -108,7 +108,7 @@ git stash  # Salva as alterações localmente sem adicionar a um ramo.
 git stash --list  # Lista todas as alterações salvas para a árvore de trabalho.
 git stash pop  # Remove as alterações salvas como stash
 git stash apply  # Aplica as alterações salvas na stash
-
+```
 
 </details>
 
@@ -220,5 +220,5 @@ git stash  # Salva as alterações localmente sem adicionar a um ramo.
 git stash --list  # Lista todas as alterações salvas para a árvore de trabalho.
 git stash pop  # Remove as alterações salvas como stash
 git stash apply  # Aplica as alterações salvas na stash
-
+```
 </details>
