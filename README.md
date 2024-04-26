@@ -19,6 +19,7 @@ versioning from [DIO.me](dio.me)
 | Undoing changes on Local Repository | [Restore](#Restore)
 | Pull & Push changes on Local Repository | [Pull & Push](#Pull%20%26%20Push) |
 | Working With Branches: Merge, Delete, Diff Conflicts | [Working with Branches](#Working%20with%20Branches) |
+| Usefull Commands | [Usefull Commands](#Usefull%20Commands) |
 
 ### Saving
 
@@ -96,6 +97,18 @@ git branch -d ${branch}  # Delete a branch
 > Git will generate a conflict in the files itself that must be resolved before
 > merged.
 
+### Useful commands
+
+```sh
+git fetch
+git diff ${from_branch} ${to_branch}  # Verifica a diferença entre os arquivos
+                                      # para detectar conflitos.
+git clone ${remote_url} --branch ${branch} --single-branch  # Clona um ramo remoto
+git stash  # Salva as alterações localmente sem adicionar a um ramo.
+git stash --list  # Lista todas as alterações salvas para a árvore de trabalho.
+git stash pop  # Remove as alterações salvas como stash
+git stash apply  # Aplica as alterações salvas na stash
+
 
 </details>
 
@@ -117,6 +130,7 @@ git branch -d ${branch}  # Delete a branch
 | Desfazendo Alterações no Repositório Local | [Restaurando](#Restaurando)
 | Enviando e baixando alterações com repositório remoto | [Enviando & Baixando](#Enviando%20%26%20Baixando) |
 | Trabalhando com Ramos | [Trabalhando com Ramos](#trabalhando%20com%20ramos) |
+| Comandos Úteis | [Comandos Úteis](#Comandos%20Úteis) |
 
 ### Salvando
 
@@ -195,5 +209,16 @@ git branch -d ${branch}  # Remove um ramo
 > git irá gerar um conflito nos próprios arquivos que deverão ser resolvidos
 > antes de serem enviados.
 
+### Comandos Úteis
+
+```sh
+git fetch
+git diff ${from_branch} ${to_branch}  # Verifica a diferença entre os arquivos
+                                      # para detectar conflitos.
+git clone ${remote_url} --branch ${branch} --single-branch  # Clona um ramo remoto  
+git stash  # Salva as alterações localmente sem adicionar a um ramo.
+git stash --list  # Lista todas as alterações salvas para a árvore de trabalho.
+git stash pop  # Remove as alterações salvas como stash
+git stash apply  # Aplica as alterações salvas na stash
 
 </details>
