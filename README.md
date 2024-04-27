@@ -17,9 +17,9 @@ versioning from [DIO.me](dio.me)
 | ------- | ------- |
 | Saving changes on Local Repository | [Saving](#Saving) |
 | Undoing changes on Local Repository | [Restore](#Restore)
-| Pull & Push changes on Local Repository | [Pull & Push](#Pull%20%26%20Push) |
-| Working With Branches: Merge, Delete, Diff Conflicts | [Working with Branches](#Working%20with%20Branches) |
-| Usefull Commands | [Usefull Commands](#Usefull%20Commands) |
+| Pull & Push changes on Local Repository | [Pull & Push](#Pull-&-Push) |
+| Working With Branches: Merge, Delete, Diff Conflicts | [Working with Branches](#Working-with-Branches) |
+| Usefull Commands | [Usefull Commands](#Usefull-Commands) |
 
 ### Saving
 
@@ -128,9 +128,9 @@ git stash apply  # Aplica as alterações salvas na stash
 | ----- | ------- |
 | Salvando Alterações no Repositório Local | [Salvando](#Salvando) |
 | Desfazendo Alterações no Repositório Local | [Restaurando](#Restaurando)
-| Enviando e baixando alterações com repositório remoto | [Enviando & Baixando](#Enviando%20%26%20Baixando) |
-| Trabalhando com Ramos | [Trabalhando com Ramos](#trabalhando%20com%20ramos) |
-| Comandos Úteis | [Comandos Úteis](#Comandos%20Úteis) |
+| Enviando e baixando alterações com repositório remoto | [Enviando & Baixando](#Enviando-&-Baixando) |
+| Trabalhando com Ramos | [Trabalhando com Ramos](#Trabalhando-com-Ramos) |
+| Comandos Úteis | [Comandos Úteis](#Comandos-Úteis) |
 
 ### Salvando
 
